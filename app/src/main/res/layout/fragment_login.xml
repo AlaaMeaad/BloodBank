@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/login_fargment_lu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_above="@id/login_fargment_tx_phone"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="@dimen/dim_m"
+        android:layout_marginTop="@dimen/dim_m"
+        android:layout_marginEnd="@dimen/dim_m"
+        android:src="@drawable/logo" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/login_fargment_tx_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="@dimen/dim_m"
+        android:layout_marginTop="@dimen/dim_m"
+        android:layout_marginEnd="@dimen/dim_m"
+        android:background="@drawable/shap_et">
+
+        <EditText
+            android:id="@+id/appedit1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dim_m"
+            android:layout_marginTop="@dimen/dim_m"
+            android:layout_marginEnd="@dimen/dim_m"
+            android:background="@null"
+            android:fontFamily="@font/cairo"
+            android:hint=" Your Phone"
+            android:inputType="phone" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/login_fargment_tx_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_fargment_tx_phone"
+        android:layout_marginStart="@dimen/dim_m"
+        android:layout_marginTop="@dimen/dim_m"
+        android:fontFamily="@font/cairo"
+        android:layout_marginEnd="@dimen/dim_m"
+        android:background="@drawable/shap_et">
+
+        <EditText
+            android:id="@+id/appedit2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dim_m"
+            android:layout_marginTop="@dimen/dim_m"
+            android:layout_marginEnd="@dimen/dim_m"
+            android:background="@null"
+            android:hint=" Your Password"
+            android:inputType="textPassword" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <CheckBox
+        android:id="@+id/login_fargment_chbox"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dim_20"
+        android:layout_below="@+id/login_fargment_tx_password"
+        android:layout_marginStart="@dimen/dim_m"
+        android:layout_marginTop="@dimen/dim_m"
+        android:layout_marginEnd="@dimen/dim_m"
+        android:text="@string/remember_me" />
+
+    <TextView
+        android:id="@+id/user_tv_forget_password"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dim_20"
+        android:layout_below="@+id/login_fargment_tx_password"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="@dimen/dim_m"
+        android:layout_marginTop="@dimen/dim_m"
+        android:layout_marginEnd="@dimen/dim_m"
+        android:drawableStart="@drawable/ic_error"
+        android:drawablePadding="@dimen/dim_s"
+        android:gravity="center"
+        android:text="@string/forget_password"
+        android:textColor="@color/blue"
+
+        />
+
+    <Button
+        android:id="@+id/login_but_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/user_tv_forget_password"
+        android:layout_marginStart="@dimen/dim_m"
+        android:layout_marginTop="@dimen/dim_20"
+        android:layout_marginEnd="@dimen/dim_m"
+        android:background="@color/green"
+        android:text="@string/login"
+
+        />
+
+    <Button
+        android:id="@+id/login_but_creat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_but_login"
+        android:layout_marginStart="@dimen/dim_m"
+        android:layout_marginTop="@dimen/dim_12"
+        android:layout_marginEnd="@dimen/dim_m"
+        android:background="@color/blue"
+        android:text="@string/creat_new_account" />
+</RelativeLayout>

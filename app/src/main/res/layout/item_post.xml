@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/shape_post"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/dim_8">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/post_adapter_tv_post_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@id/post_adapter_iv_post_status"
+            android:textSize="@dimen/dim_20sp"/>
+
+        <ImageView
+            android:id="@+id/post_adapter_iv_post_status"
+            android:layout_width="@dimen/dim_50"
+            android:layout_height="@dimen/dim_50"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="@dimen/dim_4" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/post_adapter_iv_post_image"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_200" />
+
+</LinearLayout>

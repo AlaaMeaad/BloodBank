@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:fillViewport="true"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/create_acc_register_actavity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/cairo"
+            android:gravity="center"
+            android:text="@string/create_new_account"
+            android:textSize="@dimen/dim_30"
+            android:textStyle="bold" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/cairo"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/user_name_register"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dim_50"
+                android:layout_marginStart="@dimen/dim_8"
+                android:layout_marginTop="@dimen/dim_18"
+                android:layout_marginEnd="@dimen/dim_8"
+                android:background="@color/white"
+                android:hint="User Name"
+                android:textSize="@dimen/dim_20sp" />
+
+            <EditText
+                android:id="@+id/email_register"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dim_50"
+                android:layout_marginStart="@dimen/dim_8"
+                android:layout_marginTop="@dimen/dim_18"
+                android:layout_marginEnd="@dimen/dim_8"
+                android:background="@color/white"
+                android:hint="@string/email"
+                android:inputType="textEmailAddress"
+
+                android:textSize="@dimen/dim_20sp" />
+
+            <TextView
+                android:id="@+id/birthday_register"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dim_50"
+                android:layout_marginStart="@dimen/dim_8"
+                android:layout_marginTop="@dimen/dim_18"
+                android:layout_marginEnd="@dimen/dim_8"
+                android:background="@color/white"
+                android:drawableEnd="@drawable/data"
+                android:gravity="center_vertical"
+                android:hint="Birthday"
+                android:textSize="@dimen/dim_20sp" />
+
+            <!--android:drawableEnd="@drawable/dataRegsiter"-->
+
+            <Spinner
+
+                android:id="@+id/type_blood_spinner_register"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dim_50"
+                android:layout_marginStart="@dimen/dim_8"
+                android:layout_marginTop="@dimen/dim_18"
+                android:layout_marginEnd="@dimen/dim_8"
+                android:background="@color/white"
+                android:scrollbarSize="@dimen/dim_20"
+                android:textSize="@dimen/dim_20sp" />
+
+            <TextView
+                android:id="@+id/data_tbra_register"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dim_50"
+                android:layout_marginStart="@dimen/dim_8"
+                android:layout_marginTop="@dimen/dim_18"
+                android:layout_marginEnd="@dimen/dim_8"
+                android:background="@color/white"
+                android:drawableEnd="@drawable/data"
+                android:gravity="center_vertical"
+                android:hint="Last Donation Date"
+                android:textSize="@dimen/dim_20sp" />
+
+            <!--android:drawableEnd="@drawable/dataRegsiter"-->
+            <Spinner
+                android:id="@+id/mohfzat_spinner_register"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dim_50"
+                android:layout_marginStart="@dimen/dim_8"
+                android:layout_marginTop="@dimen/dim_18"
+                android:layout_marginEnd="@dimen/dim_8"
+                android:background="@color/white"
+                android:textSize="@dimen/dim_20sp" />
+
+            <Spinner
+                android:id="@+id/city_spinner_register"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dim_50"
+                android:layout_marginStart="@dimen/dim_8"
+                android:layout_marginTop="@dimen/dim_18"
+                android:layout_marginEnd="@dimen/dim_8"
+                android:background="@color/white"
+                android:textSize="@dimen/dim_20sp" />
+
+            <EditText
+                android:id="@+id/phone_register"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dim_50"
+                android:layout_marginStart="@dimen/dim_8"
+                android:layout_marginTop="@dimen/dim_18"
+                android:layout_marginEnd="@dimen/dim_8"
+                android:background="@color/white"
+                android:hint="Phone"
+                android:inputType="phone"
+                android:textSize="@dimen/dim_20sp" />
+
+            <EditText
+                android:id="@+id/password_register"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dim_50"
+                android:layout_marginStart="@dimen/dim_8"
+                android:layout_marginTop="@dimen/dim_18"
+                android:layout_marginEnd="@dimen/dim_8"
+                android:background="@color/white"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:textSize="@dimen/dim_20sp" />
+
+            <EditText
+                android:id="@+id/confirm_password_register"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dim_50"
+                android:layout_marginStart="@dimen/dim_8"
+                android:layout_marginTop="@dimen/dim_18"
+                android:layout_marginEnd="@dimen/dim_8"
+                android:background="@color/white"
+                android:hint="Confirm Password"
+                android:inputType="textPassword"
+                android:textSize="@dimen/dim_20sp" />
+
+            <Button
+                android:id="@+id/sign_up_register"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dim_50"
+                android:layout_margin="@dimen/dim_8"
+                android:layout_marginStart="@dimen/dim_8"
+                android:layout_marginTop="@dimen/dim_18"
+                android:layout_marginEnd="@dimen/dim_8"
+                android:background="@color/green"
+                android:text="Sign Up"
+                android:textSize="@dimen/dim_25sp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
